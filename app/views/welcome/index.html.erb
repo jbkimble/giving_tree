@@ -1,6 +1,15 @@
-<!-- render partial navbar -->
-<h1>Welcome To Giving Tree</h1>
-<h3>Welcome To Giving Tree</h3>
+<%= render partial: 'shared/navbar' %>
 
-<%= link_to "Login", login_path %>
-<%= link_to "Create Account", signup_path %>
+<div class="container">
+
+  <h1>Welcome To Giving Tree</h1>
+  <h3>Welcome To Giving Tree</h3>
+
+  <div class="row">
+    <a class="waves-effect waves-light btn" href="/login"><i class="material-icons left">vpn_key</i>Login</a>
+  </div>
+
+  <div class="row">
+    <a class="waves-effect waves-light btn" href="/signup"><i class="material-icons left">visibility</i>Create Account</a>
+  </div>
+</div>
